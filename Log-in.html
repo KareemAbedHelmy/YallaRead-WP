@@ -1,0 +1,90 @@
+<html>
+    <head>
+<title>Log_in</title>
+ <link rel=stylesheet href="IndexCss.css">
+<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    </head>
+    <body>
+	<div>
+	<a href="Index.html"> <img id="logo" src="Images/YRLogo2.jpg" alt="Yalla Read Logo"></a>
+    <h1>YallaRead</h1>
+    </div>    
+<div class="topnav">
+  <a href="bookgenres.html">Book Genres</a>
+    <a href="authors.html">Authors</a>
+    <a href="AboutYR.html">About Us</a>
+    <a href="log-in.html">Log-In</a>
+       <a href="User.html">User-Profile</a>
+  <input type="text" placeholder="Search..">
+</div>
+<div class="card">
+<form action="/action_page.php">
+  <div class="imgcontainer">
+     <img src="Images/sing.png" alt="person">
+  </div>
+
+  <div class="formcontainer">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+<br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+    <button type="submit">Login</button>
+      
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+    
+    <span class="psw">Forgot <a href="#">password?</a></span>
+        
+        </form>
+
+<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button> 
+        </div>
+<div id="id01" class="modal"> 
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> 
+  <form class="modal-content animate" action="/action_page.php"> 
+    <div class="sgnup"> 
+      <label>Email</label> 
+      <input type="text" placeholder="Enter Email" name="email" required> 
+  
+      <label>Password</label> 
+      <input type="password" placeholder="Enter Password" name="psw" required> 
+  
+      <label>Repeat Password</label> 
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required> 
+      <input type="checkbox" checked="checked"> Remember me 
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> 
+  
+      <div class="clearfix"> 
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+        <button type="submit" class="signupbtn">Sign Up</button> 
+      </div> 
+    </div> 
+  </form> 
+</div> 
+        <script> 
+  
+var modal = document.getElementById('id01'); 
+  
+  
+window.onclick = function(event) { 
+    if (event.target == modal) { 
+        modal.style.display = "none"; 
+    } 
+} 
+</script> 
+     <footer>
+   <div class="footer">
+Copyright &copy;2019 YallaRead <br>
+Email: <a href="mailto:YallaRead@gmail.com">YallaRead@gmail.com</a>
+Phone: 01121997045
+</div>
+</footer>
+     </body>
+</html>
+
